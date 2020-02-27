@@ -9,13 +9,13 @@ namespace DistanceCalulator
             Console.WriteLine("Distance Calculator");
             Console.WriteLine("-------------------");
 
-            var pos1 = new Position();
+            var pos1 = new Coordinate();
             Console.Write("Latitude 1: ");
             pos1.Latitude = ReadDouble();
             Console.Write("Longitude 1: ");
             pos1.Longitude = ReadDouble();
 
-            var pos2 = new Position();
+            var pos2 = new Coordinate();
             Console.Write("Latitude 2: ");
             pos2.Latitude = ReadDouble();
             Console.Write("Longitude 2: ");

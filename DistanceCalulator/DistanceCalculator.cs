@@ -8,14 +8,14 @@ namespace DistanceCalulator
         private const double earthRadiusMi = 3958.8;
 
 
-        public static double GetKilometers(Position pos1, Position pos2) =>
+        public static double GetKilometers(Coordinate pos1, Coordinate pos2) =>
             Math.Round(earthRadiusKm * GetDistance(pos1, pos2), 3);
 
-        public static double GetMiles(Position pos1, Position pos2) =>
+        public static double GetMiles(Coordinate pos1, Coordinate pos2) =>
             Math.Round(earthRadiusMi * GetDistance(pos1, pos2), 3);
 
 
-        private static double GetDistance(Position pos1, Position pos2)
+        private static double GetDistance(Coordinate pos1, Coordinate pos2)
         {
             // Calculation based on https://andrew.hedges.name/experiments/haversine/ (2020-02-27)
 
